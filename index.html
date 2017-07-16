@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <title>Информация о пользователе</title>
+</head>
+<body>
+  <div class="container">
+    <div class="col w5">
+      <div class="form-header">Информация о пользователе</div>
+      <div class="form-content">
+        <form class="form" name="publish">
+          <div class="form-element">
+            <label for="lastname">Фамилия</label>
+            <input type="text"  name="lastname" placeholder="Фамилия" required/>
+          </div>
+          <div class="form-element">
+            <label for="firstname">Имя</label>
+            <input type="text" name="firstname" placeholder="Имя" required/>
+          </div>
+          <div class="form-element">
+            <label for="patronimic">Отчество</label>
+            <input type="text" name="patronimic" placeholder="Отчество" required/>
+          </div>
+          <div class="form-element">
+            <label for="age">Возраст</label>
+            <input type="number" name="age" placeholder="Возраст" required pattern="[1-9]{2}"/>
+          </div>
+          <div class="form-element" id="submit_publish_form">
+              <input type="submit" value="Сохранить данные" />
+          </div>
+        </form>
+      </div>
+      <div class="transport">
+        <label for="transport"> AJAX (default Websocket)
+          <input type="checkbox" id="transport" name="transport" onChange="(setTransportType.bind(this))()" />
+        </label>
+      </div>
+    </div>
+    <div class="col w5">
+      <div id="subscribe" class="information">
+        <div class="information-header">Информация о пользователе</div>
+        <div class="information-content">
+          <table>
+            <tr>
+              <td>ФИО: </td>
+              <td id="fio_subscribe"></td>
+            </tr>
+            <tr>
+              <td>Возраст: </td>
+              <td id="age_subscribe"></td>
+            </tr>
+            <tr>
+              <td>Баланс: </td>
+              <td id="balance_subscribe"></td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="information-content button" onClick="refreshBalance();">
+          <span>Обновить</span>
+          <input type="hidden" id="uid" />
+        </div>
+        <div class="information-error">
+          <p id="balance_err" class="error hidden">Ошибка</p>
+        </div>
+      </div>
+
+    </div>
+    <div style="float: left">
+      <a href="server.html" target="_blank">Серверная часть>> </a>
+    </div>
+  </div>
+
+<script src="js/browser.js"></script>
+
+</body>
+</html>

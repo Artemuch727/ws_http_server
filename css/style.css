@@ -1,0 +1,190 @@
+body{
+  font-family: "Helvetica";
+}
+
+
+.information-header{
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.information-content{
+  padding: 10px;
+}
+
+.information-content table td{
+  padding: 5px;
+}
+
+.information-content.button{
+  text-align: right;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.information-content.button:hover{
+    font-size: 14px;
+}
+
+.information-error{
+  background: rgba(0, 0, 0, 0.05);
+  color: red;
+  line-height: 28px;
+}
+
+.information-error p{
+  background: rgba(0, 0, 0, 0.05);
+  color: red;
+  line-height: 28px;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.form-header{
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.form-content{
+  padding: 10px;
+}
+
+
+.form-element{
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-element label, .user-item label {
+  font-size: 14px;
+  margin: 4px 0;
+  font-style: italic;
+}
+
+.form-element input{
+  width: 95%;
+  height: 32px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.form-element.error input{
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.form-element.error p{
+  font-size: 12px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 3px;
+}
+
+.form-element input[type=checkbox] {
+    width: 25px;
+    height: 38px;
+    padding: 15px;
+    border: 1px grey solid;
+    padding: 10px;
+    background: ghostwhite;
+    text-align: center;
+    font-size: 13px;
+}
+
+.form-element input[type=submit] {
+    width: 100%;
+    height: 38px;
+    padding: 15px;
+    border: 1px grey solid;
+    padding: 10px;
+    background: ghostwhite;
+    text-align: center;
+    font-size: 13px;
+}
+
+.form-element input[type=submit]:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  display: block;
+}
+
+.error input,
+.error textarea {
+  border: 1px solid red;
+}
+
+.container{
+  width: 100%;
+  padding: 15px;
+  max-width: 1024px;
+}
+
+.col{
+  float: left;
+  margin: 0 10px;
+  border: 1px grey solid;
+}
+
+.w5 {
+  width: 40%;
+}
+
+.hidden{
+  display: none;
+}
+
+.transport{
+  font-size: 12px;
+  float: right;
+  padding: 5px 10px;
+}
+
+.users{
+  width: 30%;
+}
+
+.user-item{
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.user-item:hover{
+  box-shadow: 0px 0px 5px rgba(0,0,0, 0.5);
+}
+
+.user-item input[type=number]{
+  height: 32px;
+  padding-left: 15px;
+  font-size: 16px;
+  width: 70px;
+}
+.user-item input[type=submit] {
+  height: 38px;
+  margin-left: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.user-item form p{
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.users-btn{
+  width: 220px;
+  cursor: pointer;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 5px rgba(0,0,0, 0.3)
+}
+.users-btn:hover{
+  box-shadow: 0px 0px 5px rgba(0,0,0, 0.5)
+
+}
